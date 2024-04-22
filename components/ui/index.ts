@@ -1,6 +1,6 @@
-import Hero from './Hero';
-export
-{
-Hero
-}
-
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+export { 
+    Hero,
+    Navbar
+ };
