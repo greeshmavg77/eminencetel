@@ -5,21 +5,27 @@ import { NAV_LINKS } from "@/constant";
 
 const Navbar = () => {
   return (
-    <header className="w-full absolute z-10  bg-gray-800">
-    <nav className=" max-w-[1440px] h-[80px] mx-auto flex justify-between items-center sm:px-16 px-6 py-5">
+    <header className="w-full absolute z-10  bg-black border-b-[1px] border-gray-500">
+    <nav className=" max-w-[1440px]  mx-auto flex justify-between items-center sm:px-16 px-6 py-2">
       <Link href="/" className="flex justify-center items-center gap-3">
-        <image></image>
-        <p className="text-white font-bold text-[18px] tracking-[-1] leading-5">
+      <Image
+              src="/eminencetel.png"
+              alt="logo"
+              width={170}
+              height={100}
+              className="object-contain"
+            />
+        {/* <p className="text-white font-bold text-[18px] tracking-[-1] leading-5">
           eminencetel
-        </p>
+        </p> */}
       </Link>
-      <div className="flex gap-[70px] ">
+      <div className="hidden h-full lg:flex gap-[70px] ">
       {NAV_LINKS.map((link) => (
         <Link
           href={link.href}
           key={link.key}
           className="nav-link flex 
-          text-white font-bold  group/nav cursor-pointer flex- transition-all h-[50px] items-center hover:border-b-[3px] border-sky-500"
+          text-white font-semibold  group/nav cursor-pointer flex- transition-all h-[50px] items-center hover:border-b-[3px] border-sky-500"
         >
           {link.label}
           {link.icon_s === "true" && (
@@ -44,9 +50,15 @@ const Navbar = () => {
         </Link>
       ))}
       </div>
+      <Image
+          src={"menu.svg"}
+          alt="menu"
+          width={32}
+          height={32}
+          className="inline-block cursor-pointer lg:hidden"
+        />
     </nav>
   </header>
   )
 }
-
 export default Navbar
