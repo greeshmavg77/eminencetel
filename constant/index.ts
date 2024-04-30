@@ -5,3 +5,30 @@ export const NAV_LINKS = [
   { href: "/", key: "SERVICE", label: "SERVICE", icon_s: "true" },
   { href: "/", key: "CONTACT ", label: "CONTACT ", icon_s: "true" },
 ];
+
+export const footer_sections1 = [
+  {
+    title: "WHY CHOOSE US",
+    links: [
+      { title: "Service | Speed", url: "" },
+      { title: "Support | Cost", url: "" },
+      { title: "Flexibility | Experience & Dedication", url: "" },
+      { title: "Licensed & Insured", url: "/" },
+      { title: "Single Contact For All Your Telecom Needs", url: "" }
+    ]
+  }
+]
+
+export const footerLinks = [
+  {
+    title: "LINKS",
+    links: [
+      { title: "Home", url: "/" },
+      { title: "Services", url: "/" },
+      { title: "Solutions", url: "/" },
+      { title: "About", url: "/" },
+      { title: "Contact", url: "/" },
+    ],
+  }]
+  
+
