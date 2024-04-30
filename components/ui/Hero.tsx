@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { HeroHighlight, Highlight } from "../ui/hero-highlight";
 import dynamic from "next/dynamic";
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
@@ -404,7 +405,55 @@ export function GlobeDemo() {
     },
   ];
   return (
-    <div className="flex  gap-4 items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
+    <HeroHighlight>
+    <motion.h1
+      initial={{
+        opacity: 0,
+        y: 20,
+      }}
+      animate={{
+        opacity: 1,
+        y: [20, -5, 0],
+      }}
+      transition={{
+        duration: 0.5,
+        ease: [0.4, 0.0, 0.2, 1],
+      }}
+    >
+      <div className="flex  gap-4 items-center justify-center pt-20 pb-4 h-screen md:h-auto relative w-full">
+      <div className="lg:ml-10 items-center max-w-[50%]">
+        <h2 className=" text-[3.25rem] leading-[65px] font-bold text-black dark:text-white font-sans"style={{ fontFamily: ' Georgia, serif' }}>
+          CUTTING EDGE TELECOM SOLUTIONS FOR YOUR BUSINESS
+        </h2>
+        <p className=" text-lg md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2"style={{ fontFamily: '' }}>
+        Deployment & Integration - Operation & Maintenance.. We provide Network Services to Telecom Operators, OEM’s and Tower Companies.
+        </p>
+      </div>
+     <div className="relative mx-auto w-[50%] overflow-hidden md:h-[40rem] pr-4 ">
+      <div className=" w-full  h-72 md:h-full z-10 right-4 ">
+          <World data={sampleArcs} globeConfig={globeConfig} />;
+          <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent z-40" >
+        </div>
+        </div>
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 20,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 1,
+          }}
+          className="div"
+        ></motion.div>
+        
+      </div>
+      </div>
+    
+    
        {/* <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -429,37 +478,11 @@ export function GlobeDemo() {
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper> */}
-      <div className="lg:ml-10 items-center max-w-[50%]">
-        <h2 className=" text-[3.25rem] leading-[65px] font-bold text-black dark:text-white font-sans"style={{ fontFamily: ' Georgia, serif' }}>
-          CUTTING EDGE TELECOM SOLUTIONS FOR YOUR BUSINESS
-        </h2>
-        <p className=" text-lg md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2"style={{ fontFamily: ' Georgia, serif' }}>
-        Deployment & Integration - Operation & Maintenance.. We provide Network Services to Telecom Operators, OEM’s and Tower Companies.
-        </p>
-      </div>
-      <div className="relative mx-auto w-[50%] overflow-hidden md:h-[40rem] pr-4 ">
-      <div className=" w-full  h-72 md:h-full z-10 right-4 ">
-          <World data={sampleArcs} globeConfig={globeConfig} />;
-          <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" >
-        </div>
-        </div>
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
-          className="div"
-        ></motion.div>
-        
-      </div>
-    </div>
+      
+      
+    
+    </motion.h1>
+  </HeroHighlight>
   );
 }
 

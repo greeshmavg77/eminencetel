@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Bogart-Semibold-trial';
+    src: url('/public/bogart/Bogart-Semibold-trial.ttf') format('truetype'),
+         url('/fonts/your-font-file.woff') format('woff');
+    /* Add additional font formats if necessary */
+    font-weight: 600;
+    font-style: normal;
+  }
