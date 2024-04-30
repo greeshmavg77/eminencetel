@@ -8,11 +8,11 @@ export const NAV_LINKS = [
 
 export const footer_sections1 = [
   {
-    title: "WHY CHOOSE EMINENCETEL",
+    title: "WHY CHOOSE US",
     links: [
-      { title: "Service    |    Speed", url: "" },
-      { title: "Support    |    Cost", url: "" },
-      { title: "Flexibility    |    Experience & Dedication", url: "" },
+      { title: "Service | Speed", url: "" },
+      { title: "Support | Cost", url: "" },
+      { title: "Flexibility | Experience & Dedication", url: "" },
       { title: "Licensed & Insured", url: "/" },
       { title: "Single Contact For All Your Telecom Needs", url: "" }
     ]
@@ -21,13 +21,13 @@ export const footer_sections1 = [
 
 export const footerLinks = [
   {
-    title: "SITE LINK",
+    title: "LINKS",
     links: [
       { title: "Home", url: "/" },
       { title: "Services", url: "/" },
       { title: "Solutions", url: "/" },
-      { title: "About Us", url: "/" },
-      { title: "Contact Us", url: "/" },
+      { title: "About", url: "/" },
+      { title: "Contact", url: "/" },
     ],
   }]
   
