@@ -7,4 +7,5 @@ export {
     Navbar,
     GlobeDemo,
     Footer,
+    Whyus
  };

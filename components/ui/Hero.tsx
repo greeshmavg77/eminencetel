@@ -3,17 +3,8 @@ import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "../ui/hero-highlight";
 import dynamic from "next/dynamic";
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
 
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
   ssr: false,
 });
@@ -405,7 +396,9 @@ export function GlobeDemo() {
     },
   ];
   return (
+    
     <HeroHighlight>
+      <div className="pb[8rem] mt-10">
     <motion.h1
       initial={{
         opacity: 0,
@@ -452,36 +445,8 @@ export function GlobeDemo() {
         
       </div>
       </div>
-    
-    
-       {/* <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper> */}
-      
-      
-    
     </motion.h1>
+    </div>
   </HeroHighlight>
   );
 }
