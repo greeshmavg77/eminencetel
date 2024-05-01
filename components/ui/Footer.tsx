@@ -142,7 +142,7 @@ const Footer = () => {
             />
           </Link>
           <Link className="links" href={""}>
-            <Image src="/icons/insta.svg" alt="insta" width={14} height={14} />
+            <Image src="/icons/google.svg" alt="google" width={17 } height={17} />
           </Link>
         </div>
       </div>
