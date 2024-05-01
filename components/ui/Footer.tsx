@@ -6,7 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="e_footer w-full bg-neutral-950  border-t  p-4 mt-10  gap-6 sm:px-16 lg:px-44 py-10">
-      <div className="flex flex-row border-b border-slate-600 ">
+      <div className="flex flex-row border-b border-slate-600 justify-between">
         <div className="">
           <Link href="/" className="flex  items-center gap-3">
             <Image
@@ -90,13 +90,13 @@ const Footer = () => {
               </Link>
               <strong>+44 1527 336 673</strong>
             </li>
-            <li className="flex  gap-3  hover:text-slate-300">
+            <li className="flex  gap-3 pt-1 hover:text-slate-300">
               <Link className="links " href={""}>
                 <Image
                   src="/icons/email.svg"
                   alt="email"
                   width={20}
-                  height={30}
+                  height={20}
                 />
               </Link>
               <strong>Email:</strong>
@@ -104,8 +104,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="c_footer flex flex-row justify-between items-center flex-wrap lg:mt-5  sm:px-16 lg:px-44 py-">
-        <div className="copyright lg:w-[25%] md:w-[75%] sm:w-full font-normal text-[13px]">
+      <div className="c_footer w-full flex justify-end align-baseline ">
+        <div className="copyright w-full font-normal text-[9px] leading-snug">
           <p>Eminencetel. All rights resereved</p>
         </div>
         <div className="footer__link flex flex-row gap-2 ">
@@ -135,15 +135,21 @@ const Footer = () => {
           </Link>
           <Link className="links" href={""}>
             <Image
+              src="/icons/google.svg"
+              alt="google"
+              width={17}
+              height={17}
+            />
+          </Link>
+          <Link className="links" href={""}>
+            <Image
               src="/icons/youtube.svg"
               alt="youtube"
               width={14}
               height={14}
             />
           </Link>
-          <Link className="links" href={""}>
-            <Image src="/icons/google.svg" alt="google" width={17 } height={17} />
-          </Link>
+         
         </div>
       </div>
     </footer>
