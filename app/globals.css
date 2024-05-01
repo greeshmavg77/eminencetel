@@ -70,6 +70,9 @@
 footer{
   @apply  font-sans bg-gradient-to-br from-slate-800 via-black
 }
+.Navbar{
+  @apply  font-sans bg-gradient-to-tr from-gray-800  bg-black
+}
 .e_footer {
   @apply text-slate-400 leading-relaxed ;
 
