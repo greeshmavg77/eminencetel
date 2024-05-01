@@ -80,17 +80,20 @@ footer{
 .footer_sections1 h3,
 .footer_sections h3,
 .f_contact h3 {
-  @apply text-slate-200 text-[14px] font-normal
+  @apply text-slate-200 text-[14px] font-normal align-baseline pt-2 
 }
 
 .footer_sections1,
 .footer_sections,
 .f_contact {
-  @apply max-w-[28rem] text-[13px] font-medium grid ;
+  @apply max-w-[28rem] text-[13px] font-medium grid 
 }
 .c_footer {
   @apply pt-6;
 }
 .text {
   @apply text-[13px] font-medium;
+}
+.brand_icon{
+  @apply p-5 flex-row
 }
