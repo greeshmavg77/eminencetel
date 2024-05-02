@@ -12,7 +12,7 @@ const SignupFormDemo: React.FC = () => {
   };
     return (
       <HeroHighlight>
-        <div className="Contact max-w-md w-full mx-auto rounded-none md:rounded-2xl md:p-8 shadow-input border-1 border-slate bg-white dark:bg-black m-20 ">
+        <div className="Contact max-w-md w-full mx-auto rounded-none md:rounded-2xl md:p-8 shadow-input border-2 border-slate-500 bg-white dark:bg-black m-20 ">
           <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
             Welcome to Eminencetel
           </h2>
