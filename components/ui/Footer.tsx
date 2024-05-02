@@ -5,7 +5,7 @@ import React from "react";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <footer className="e_footer w-full  text-slate-400  bg-neutral-950  border-t  p-4 mt-10 leading-relaxed  gap-6 sm:px-16 lg:px-44 py-10">
+    <footer className="e_footer w-full  text-slate-400  bg-neutral-950   p-4 leading-relaxed  gap-6 sm:px-16 lg:px-44 py-10">
       <div className="flex flex-row border-b border-slate-600 justify-between">
         <div className="">
           <Link href="/" className="flex  items-center gap-3">
