@@ -1,4 +1,3 @@
-
 import Brand from "./Brand";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -12,5 +11,4 @@ export {
     Footer,
     Whyus,
     Contact,
-    Brand
  };
