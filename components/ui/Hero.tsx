@@ -396,60 +396,56 @@ export function GlobeDemo() {
   ];
   return (
     <HeroHighlight>
-      {/* <div className="pb[8rem] mt-10"> */}
-      <motion.h1
-        initial={{
-          opacity: 0,
-          y: 20,
-        }}
-        animate={{
-          opacity: 1,
-          y: [20, -5, 0],
-        }}
-        transition={{
-          duration: 0.5,
-          ease: [0.4, 0.0, 0.2, 1],
-        }}
-      >
-        <div className="flex  gap-4 items-center justify-center mt-4  h-screen md:h-auto relative w-full">
-          <div className="lg:ml-10 items-center max-w-[50%]">
-            <h2
-              className=" text-[3.25rem] leading-[65px] font-bold text-black dark:text-white font-sans"
-              style={{ fontFamily: " Georgia, serif" }}
-            >
-              CUTTING EDGE TELECOM SOLUTIONS FOR YOUR BUSINESS
-            </h2>
-            <p
-              className=" text-lg md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2"
-              style={{ fontFamily: "" }}
-            >
-              Deployment & Integration - Operation & Maintenance.. We provide
-              Network Services to Telecom Operators, OEM’s and Tower Companies.
-            </p>
-          </div>
-          <div className="relative mx-auto w-[50%] overflow-hidden md:h-[40rem] pr-4 ">
-            <div className=" w-full  h-72 md:h-full z-10 right-4 ">
-              <World data={sampleArcs} globeConfig={globeConfig} />;
-              {/* <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent z-40"></div> */}
-            </div>
-            <motion.div
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                duration: 1,
-              }}
-              className="div"
-            ></motion.div>
-          </div>
+      <div className="flex  gap-4 items-center justify-center mt-4  h-screen md:h-auto relative w-full">
+        <div className="lg:ml-10 items-center max-w-[50%]">
+          <h2
+            className=" text-[3.25rem] leading-[65px] font-bold text-black dark:text-white font-sans"
+            style={{ fontFamily: " Georgia, serif" }}
+          >
+            CUTTING EDGE TELECOM SOLUTIONS FOR YOUR BUSINESS
+          </h2>
+          <p
+            className=" text-lg md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2"
+            style={{ fontFamily: "" }}
+          >
+            Deployment & Integration - Operation & Maintenance.. We provide
+            Network Services to Telecom Operators, OEM’s and Tower Companies.
+          </p>
         </div>
-      </motion.h1>
-      {/* </div> */}
+        <div className=" mx-auto w-[50%] overflow-hidden md:h-[40rem] pr-4 ">
+          <div className=" w-full  h-72 md:h-full z-10 right-4 ">
+            <World data={sampleArcs} globeConfig={globeConfig} />;
+            {/* <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent z-40"></div> */}
+          </div>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 1,
+            }}
+          ></motion.div>
+          <motion.h1
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: [20, -5, 0],
+            }}
+            transition={{
+              duration: 0.5,
+              ease: [0.4, 0.0, 0.2, 1],
+            }}
+          ></motion.h1>
+        </div>
+      </div>
     </HeroHighlight>
   );
 }
