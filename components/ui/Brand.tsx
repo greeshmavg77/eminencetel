@@ -10,11 +10,10 @@ interface Brand {
 
 const brandsData: Brand[] = [
   { src: "/brand/a.png", alt: 'a', width: 100, height: 100 },
-  { src: '/brands/alcatel.png', alt: 'alcatel', width: 100, height: 100 },
-  { src: '/brands/cisco.png', alt: 'cisco', width: 100, height: 100 },
-  { src: '/brands/eric.png', alt: 'eric', width: 100, height: 100 },
-  { src: '/brands/hua.png', alt: 'hua', width: 115, height: 100 },
-  { src: '/brands/tata.png', alt: 'tata', width: 118, height: 100 },
+  { src: '/brand/alcatel.png', alt: 'alcatel', width: 100, height: 100 },
+  { src: '/brand/cisco.png', alt: 'cisco', width: 100, height: 100 },
+  { src: '/brand/eric.png', alt: 'eric', width: 100, height: 100 },
+  { src: '/brand/huawai.png', alt: 'huawai', width: 105, height: 100 },
   { src: "/brand/hkvision.png", alt: 'hkvision', width: 200, height: 200 },
   { src: "/brand/Nokia.png", alt: 'Nokia', width: 150, height: 100 },
   { src: "/brand/tata.png", alt: 'tata', width:250, height: 200 },
@@ -29,7 +28,7 @@ interface BrandsListProps {
 
 // Component to render the list of brands
 const BrandsList: React.FC<BrandsListProps> = ({ brands, ariaHidden = false }) => (
-  <ul className="brand_icon flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden={ariaHidden}>
+  <ul className="brand_icon flex items-center p-5 flex-row justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden={ariaHidden}>
     {brands.map((brand) => (
       <li
         key={brand.alt}

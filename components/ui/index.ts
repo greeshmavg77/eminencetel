@@ -1,9 +1,9 @@
 
 import Brand from "./Brand";
+import Contact from "./Contact";
 import Footer from "./Footer";
 import Hero, { GlobeDemo } from "./Hero";
 import Navbar from "./Navbar";
-import SignupFormDemo  from "./SignupFormDemo";
 import Whyus from "./Whyus";
 export { 
     Hero,
@@ -11,6 +11,6 @@ export {
     GlobeDemo,
     Footer,
     Whyus,
-    SignupFormDemo,
+    Contact,
     Brand
  };

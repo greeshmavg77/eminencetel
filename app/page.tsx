@@ -1,5 +1,5 @@
 
-import { Brand, Footer, GlobeDemo, Hero, Navbar, SignupFormDemo, Whyus } from "@/components/ui";
+import { Brand, Contact, Footer, GlobeDemo, Hero, Navbar,Whyus } from "@/components/ui";
 export default function Home() {
   return (
     <main className="overflow-hidden">
@@ -7,7 +7,7 @@ export default function Home() {
       <GlobeDemo />
       <Whyus/>
       <Brand/>
-      <SignupFormDemo/>
+      <Contact/>
       <Footer/>
     </main>
   );

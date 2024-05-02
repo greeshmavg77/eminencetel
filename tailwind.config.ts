@@ -31,7 +31,11 @@ const config: Config = {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
         }
-}
+      },
+      fontFamily: {
+        display: ['Inter', 'system-ui', 'sans-serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+      },
     },
   },
   plugins: [

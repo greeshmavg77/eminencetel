@@ -5,7 +5,7 @@ import React from "react";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <footer className="e_footer w-full bg-neutral-950  border-t  p-4 mt-10  gap-6 sm:px-16 lg:px-44 py-10">
+    <footer className="e_footer w-full  text-slate-400  bg-neutral-950  border-t  p-4 mt-10 leading-relaxed  gap-6 sm:px-16 lg:px-44 py-10">
       <div className="flex flex-row border-b border-slate-600 justify-between">
         <div className="">
           <Link href="/" className="flex  items-center gap-3">
@@ -17,17 +17,20 @@ const Footer = () => {
               className="object-contain"
             />
           </Link>
-          <p className="text p-4 max-w-[18rem]">
+          <p className="text p-4 max-w-[18rem]  text-[13px] font-medium;">
             Eminencetel provide services to private business and government
             organisations throughout UK, and specialize in the rollout of
             Telecommunications, Deployment & Intergeneration, Operation &
             Maintenance, Testing & Optimization, RAN Support and much more.
           </p>
         </div>
-        <div className="footer_sections1 p-4">
+        <div className="footer_sections1 p-4 max-w-[28rem] text-[13px] font-medium grid ">
           {footer_sections1.map((item) => (
             <div key={item.title} className="footer_sections1">
-              <h3 className="font-bold text-[20.25px] ">{item.title}</h3>
+              <h3
+                className="text-slate-200 text-[14px] font-normal align-baseline pt-2">
+                {item.title}
+              </h3>
               <div className="flex flex-col mt-4 leading-loose">
                 {item.links.map((link) => (
                   <Link
@@ -42,10 +45,13 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="footer_sections p-4 ">
+        <div className="footer_sections p-4 max-w-[28rem] text-[13px] font-medium grid ">
           {footerLinks.map((item) => (
             <div key={item.title} className="footer_sections">
-              <h3 className="font-bold text-[20.25px]">{item.title}</h3>
+              <h3
+                className=" text-slate-200 text-[14px] font-normal align-baseline pt-2">
+                {item.title}
+              </h3>
               <div className="flex flex-col mt-4 leading-loose ">
                 {item.links.map((link) => (
                   <Link
@@ -61,8 +67,10 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="f_contact p-4 ">
-          <h3 className="font-bold text-[20.25px] ">CONNECT WITH US</h3>
+        <div className="f_contact p-4 max-w-[28rem] text-[13px] font-medium grid ">
+          <h3 className="text-slate-200 text-[14px] font-normal align-baseline pt-2">
+            CONNECT WITH US
+          </h3>
           <ul className="flex flex-col mt-4 leading-loose">
             <li className="flex  gap-3 hover:text-slate-300">
               <Link className="links" href={""}>
@@ -76,7 +84,7 @@ const Footer = () => {
               <strong>EMINENCETEL LTD</strong>
             </li>
             <li className="flex  gap-3 hover:text-slate-300">
-              Unit 7, Regents Court, Farmoor Lane,Redditch, Worcestershire, B98
+              Unit 7, Regents Court, Farmoor Lane,Redditch,<br />Worcestershire, B98
               0SD
             </li>
             <li className="flex gap-3  hover:text-slate-300">
@@ -104,8 +112,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="c_footer w-full flex justify-end align-baseline ">
-        <div className="copyright w-full font-normal text-[9px] leading-snug">
+      <div className="c_footer w-full pt-7 flex justify-end align-center ">
+        <div className="copyright w-full font-normal text-[10px] leading-snug">
           <p>Eminencetel. All rights resereved</p>
         </div>
         <div className="footer__link flex flex-row gap-2 ">
@@ -113,24 +121,24 @@ const Footer = () => {
             <Image
               src="/icons/linkedin.svg"
               alt="linkedin"
-              width={14}
-              height={14}
+              width={17}
+              height={17}
             />
           </Link>
           <Link className="links" href={""}>
             <Image
               src="/icons/facebook.svg"
               alt="facebook"
-              width={14}
-              height={14}
+              width={17}
+              height={17}
             />
           </Link>
           <Link className="links" href={""}>
             <Image
               src="/icons/twitter.svg"
               alt="twitter"
-              width={14}
-              height={14}
+              width={17}
+              height={17}
             />
           </Link>
           <Link className="links" href={""}>
@@ -145,11 +153,10 @@ const Footer = () => {
             <Image
               src="/icons/youtube.svg"
               alt="youtube"
-              width={14}
-              height={14}
+              width={17}
+              height={17}
             />
           </Link>
-         
         </div>
       </div>
     </footer>
