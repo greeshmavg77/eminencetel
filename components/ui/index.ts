@@ -11,6 +11,7 @@ export {
     Hero,
     Navbar,
     GlobeDemo,
+    Brand,
     Footer,
     Whyus,
     Contact,

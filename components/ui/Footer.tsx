@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="c_footer w-full pt-7 flex justify-end align-center ">
-        <div className="copyright w-full font-normal text-[10px] leading-snug">
+        <div className="copyright w-full font-normal text-[12px] leading-snug">
           <p>Eminencetel. All rights resereved</p>
         </div>
         <div className="footer__link flex flex-row gap-2 ">
