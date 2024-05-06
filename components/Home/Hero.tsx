@@ -1,10 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "../ui/hero-highlight";
+import { HeroHighlight, Highlight } from "./hero-highlight";
 import dynamic from "next/dynamic";
 import React, { useRef, useState } from "react";
 
-const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
+const World = dynamic(() => import("./globe").then((m) => m.World), {
   ssr: false,
 });
 

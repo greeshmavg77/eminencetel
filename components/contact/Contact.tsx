@@ -1,8 +1,8 @@
 "use client";
 import React, { FormEvent } from "react";
-import { HeroHighlight } from "../ui/hero-highlight";
-import { Label } from "../ui/label";
-import { Input } from "../ui/Input";
+import { HeroHighlight } from "../Home/hero-highlight";
+import { Label } from "./label";
+import { Input } from "./Input";
 import { cn } from "@/utils/cn";
 
 const SignupFormDemo: React.FC = () => {

@@ -1,14 +1,14 @@
-import { Brand, Contact,Footer,GlobeDemo, Hero,Navbar,Service,Whyus } from "@/components/ui";
+import {GlobeDemo, } from "@/components";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <Navbar/>
+      {/* <Navbar/> */}
       <GlobeDemo />
-      <Whyus/>
-      <Service/>
-      <Contact/>
-      <Brand/>
-      <Footer/>
+      
+      {/* <Service/> */}
+      {/* <SignupFormDemo/> */}
+      {/* <Brand/> */}
+      {/* <Footer/> */}
     </main>
   );
 }

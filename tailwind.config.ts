@@ -8,11 +8,11 @@ const {
 const config: Config = {
 
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages//*.{js,ts,jsx,tsx,mdx}",
+    "./components//*.{js,ts,jsx,tsx,mdx}",
+    "./app//*.{js,ts,jsx,tsx,mdx}",
   ],
-  
+
   theme: {
     extend: {
       backgroundImage: {
@@ -25,12 +25,22 @@ const config: Config = {
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        aurora: "aurora 60s linear infinite",
       },
+
       keyframes: {
-       'infinite-scroll': {
+        'infinite-scroll': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
-        }
+        },
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
       },
       fontFamily: {
         display: ['Inter', 'system-ui', 'sans-serif'],
@@ -66,4 +76,4 @@ function addVariablesForColors({ addBase, theme }: any) {
   addBase({
     ":root": newVars,
   });
-} 
+}

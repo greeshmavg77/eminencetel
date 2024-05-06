@@ -26,7 +26,6 @@ interface BrandsListProps {
   ariaHidden?: boolean;
 }
 
-// Component to render the list of brands
 const BrandsList: React.FC<BrandsListProps> = ({ brands, ariaHidden = false }) => (
   <ul className="brand_icon flex items-center p-5 flex-row justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden={ariaHidden}>
     {brands.map((brand) => (
@@ -46,10 +45,9 @@ const BrandsList: React.FC<BrandsListProps> = ({ brands, ariaHidden = false }) =
   </ul>
 );
 
-// Main Brands component
 const Brands: React.FC = () => {
   return (
-    <div className="w-full mb-[69px] inline-flex flex-nowrap overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+      <div className="w-full p-[5rem] inline-flex flex-nowrap overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,_black_128px,_black_calc(100%-200px),transparent_100%)]">
       <BrandsList brands={brandsData} />
       <BrandsList brands={brandsData} ariaHidden={true} />
     </div>
